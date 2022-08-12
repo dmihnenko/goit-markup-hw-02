@@ -1,9 +1,11 @@
-.columns {
-    text-indent: 40px;
-    column-count: 2;
+/* Устанавливаем тип блочной модели элемента
+ content + padding + border = border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-.columns  {
-    text-indent: 80px;
-    column-count: 2;
 
+body {
+    background: #F5F5F5;
 }
