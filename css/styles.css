@@ -162,3 +162,14 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 }
+.site-footer .link {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.site-footer .link:hover,
+.site-footer .link:focus {
+	color: var(--activation-color);
+}
