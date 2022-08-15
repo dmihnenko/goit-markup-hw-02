@@ -7,7 +7,7 @@
 	--secondary-background-color: rgba(236, 236, 236, 1);
 }
 
-/* pages */
+/* page */
 body {
 	color: var(--primary-text-color);
 	background-color: rgba(255, 255, 255, 1);
@@ -16,19 +16,20 @@ body {
 .list {
 	list-style: none;
 }
-.logo {
-	text-decoration: none;
-}
 
 /* site-nav */
+
 .site-nav .link {
-	color: var(--primary-text-color);
 	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
 	color: var(--activation-color);
-	text-decoration: underline;
 }
 .site-nav .link.current {
 	color: var(--activation-color);
@@ -41,73 +42,117 @@ body {
 .auth-nav .link {
 	color: var(--secondary-text-color);
 	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
 	color: var(--activation-color);
-	text-decoration: underline;
-}
-
-/* navigation secondary - portfolio.html */
-.button.primary {
-	background-color: var(--secondary-text-color);
-	color: var(--primary-text-color);
-}
-.button.secondary {
-	background-color: var(--activation-color);
-	color: var(--white-text-color);
 }
 
 /* hero */
 .hero .hero-title {
 	color: var(--white-text-color);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+}
+.hero .hero-button {
+	color: var(--white-text-color);
+	background-color: var(--activation-color);
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
 }
 
-/* button */
-.hero .hero-button {
+/* our advantages */
+.our-advantages .sub-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+}
+.our-advantages .text {
+	color: var(--secondary-text-color);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* our-work */
+.our-work .title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+/* our-team */
+.our-team .sub-title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.our-team .text {
+	color: var(--secondary-text-color);
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/* footer */
+.site-footer .color-adress {
+	color: var(--white-text-color);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.site-footer .link {
+	color: var(--secondary-text-color);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+/* end index.html */
+
+/* ------------------start portfolio------------------ */
+
+/* sub-navi */
+.sub-navi .button {
+	cursor: pointer;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+}
+.sub-navi .button:focus,
+.sub-navi .button:hover {
 	color: var(--white-text-color);
 	background-color: var(--activation-color);
 }
 
-/* our advantages */
-.our-advantages p {
+/* work-examples */
+.work-examples a {
+	text-decoration: none;
+}
+.work-examples .sub-title {
+	color: var(--primary-text-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 36px;
+}
+.work-examples .text {
 	color: var(--secondary-text-color);
+	font-size: 16px;
+	line-height: 30px;
 }
-
-
-/* если будет много параграфов, можем испльзовать так:
-.our-advantages .text {
-  color: var(--secondary-text-color);
-}
-Присвоим значение <p class=".text"> */
-
-/* our-work */
-.our-work p {
-	color: var(--secondary-text-color);
-}
-/* our-team */
-.our-team p {
-	color: var(--secondary-text-color);
-}
-/* footer */
-.site-footer .color-adress {
-  color: var(--white-text-color);
-}
-.site-footer .link {
-color: var(--secondary-text-color);
-}
-/* End index.html */
-
-
-
-	.; /* Вопрос номер 2:
-если у нас есть на сайте h2 и p которые везде 
- оформляются одинаково, 
-можем ли мы использовать для них [title] для задания оформления и уменьшения количества 
-обьявленных css правил?
-к примеру мы знаем что все параграфы имеют следующие правило
-p[grey-text] {
-  color:  rgba(117, 117, 117, 1);
-}
-а в html 
-/* <p title="grey-text"> </p> ? */
