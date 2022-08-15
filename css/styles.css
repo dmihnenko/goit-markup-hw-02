@@ -2,16 +2,16 @@
 :root {
 	--primary-text-color: rgba(33, 33, 33, 1);
 	--secondary-text-color: rgba(117, 117, 117, 1);
-	--accedent-color: rgba(33, 150, 243, 1);
+	--activation-color: rgba(33, 150, 243, 1);
 	--white-text-color: rgba(255, 255, 255, 1);
 	--secondary-background-color: rgba(236, 236, 236, 1);
+}
 
-	/* pages */
-	body {
-		color: var(--primary-text-color);
-		background-color: rgba(255, 255, 255, 1);
-		font-family: Roboto;
-	}
+/* pages */
+body {
+	color: var(--primary-text-color);
+	background-color: rgba(255, 255, 255, 1);
+	font-family: Roboto;
 }
 .list {
 	list-style: none;
@@ -19,6 +19,7 @@
 .logo {
 	text-decoration: none;
 }
+
 /* site-nav */
 .site-nav .link {
 	color: var(--primary-text-color);
@@ -26,11 +27,14 @@
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-	color: var(--accedent-color);
+	color: var(--activation-color);
 	text-decoration: underline;
 }
 .site-nav .link.current {
-	color: var(--accedent-color);
+	color: var(--activation-color);
+}
+.hide-title {
+	visibility: hidden;
 }
 
 /* auth-nav */
@@ -40,17 +44,17 @@
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-	color: var(--accedent-color);
+	color: var(--activation-color);
 	text-decoration: underline;
 }
-/* navigation secondary - portfolio.html */
 
+/* navigation secondary - portfolio.html */
 .button.primary {
 	background-color: var(--secondary-text-color);
 	color: var(--primary-text-color);
 }
 .button.secondary {
-	background-color: var(--accedent-color);
+	background-color: var(--activation-color);
 	color: var(--white-text-color);
 }
 
@@ -58,10 +62,11 @@
 .hero .hero-title {
 	color: var(--white-text-color);
 }
+
 /* button */
 .hero .hero-button {
 	color: var(--white-text-color);
-	background-color: var(--accedent-color);
+	background-color: var(--activation-color);
 }
 
 /* our advantages */
@@ -69,12 +74,33 @@
 	color: var(--secondary-text-color);
 }
 
-/* Вопрос норме 1:
-В макете указан background color: rgba(255, 255, 255, 1);
-Текст <p> - задан как - rgba(117, 117, 117, 1); 
-Почему в макете отчетливо видно написанное, а на моем примере нет. ? */
 
-/* Вопрос номер 2:
+/* если будет много параграфов, можем испльзовать так:
+.our-advantages .text {
+  color: var(--secondary-text-color);
+}
+Присвоим значение <p class=".text"> */
+
+/* our-work */
+.our-work p {
+	color: var(--secondary-text-color);
+}
+/* our-team */
+.our-team p {
+	color: var(--secondary-text-color);
+}
+/* footer */
+.site-footer .color-adress {
+  color: var(--white-text-color);
+}
+.site-footer .link {
+color: var(--secondary-text-color);
+}
+/* End index.html */
+
+
+
+	.; /* Вопрос номер 2:
 если у нас есть на сайте h2 и p которые везде 
  оформляются одинаково, 
 можем ли мы использовать для них [title] для задания оформления и уменьшения количества 
