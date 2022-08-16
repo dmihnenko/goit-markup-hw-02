@@ -16,6 +16,9 @@ body {
 .list {
 	list-style: none;
 }
+.hide-title {
+	visibility: hidden;
+}
 
 /* site-nav */
 
@@ -33,9 +36,6 @@ body {
 }
 .site-nav .link.current {
 	color: var(--activation-color);
-}
-.hide-title {
-	visibility: hidden;
 }
 
 /* auth-nav */
