@@ -19,6 +19,22 @@ body {
 .hide-title {
 	visibility: hidden;
 }
+/* Logo */
+.logo {
+	text-decoration: none;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+}
+.logo-head {
+	color: rgba(33, 33, 33, 1);
+}
+.logo-foot {
+	color: rgba(255, 255, 255, 1);
+}
 
 /* site-nav */
 
