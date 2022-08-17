@@ -162,15 +162,15 @@ body {
 /* ------------------start portfolio------------------ */
 
 /* sub-navi */
-.sub-navi .button {
+.work-examples .button {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
 }
-.sub-navi .button:focus,
-.sub-navi .button:hover {
+.work-examples .button:focus,
+.work-examples .button:hover {
   color: var(--white-text-color);
   background-color: var(--activation-color);
 }
